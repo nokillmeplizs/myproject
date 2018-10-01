@@ -8,10 +8,10 @@
     justify-content: center;
 }
 .justify-content-start{
-    justify-content: start;
+    justify-content: flex-start;
 }
 .justify-content-end{
-    justify-content: end;
+    justify-content: flex-end;
 }
 .justify-space-between{
     justify-content: space-between;
@@ -437,10 +437,9 @@ footer{
 }
 .blogfoto >img{
     border-radius: 15px;
+    width: 100%;
 
 }
-
-
 
 @media screen and (max-width: 1024px) {
     .blogfoto{
