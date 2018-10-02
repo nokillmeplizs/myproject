@@ -40,7 +40,9 @@
 .flex-1 {
     flex: 1;
 }
-
+.flex-10 {
+    flex: 10;
+}
 .height {
    max-height: 250px;
 }
@@ -413,11 +415,16 @@ footer{
     align-self: center;
     }
 .blogtext{
-    border-top: 2px solid darkolivegreen;
-    border-bottom: 2px solid darkolivegreen; ;
+
+    align-self: center;
 }
 .blogtext p{
-    font-size: 35px;
+    font-size: calc((100vw - 480px) / (1280 - 480) * (24 - 16) + 16px);
+    margin: 0;
+}
+.borderblog{
+    border-top: 2px solid darkolivegreen;
+    border-bottom: 2px solid darkolivegreen;
 }
 .blogfoto >img{
     border-radius: 15px;
@@ -511,7 +518,7 @@ nav.show{
     .modal-dialog {
         position: relative;
         max-width: 100%;
-        margin: 50% 3% 10% 3%;
+        margin: 60% 3% 10% 3%;
 
     }
 }
