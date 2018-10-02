@@ -5,4 +5,14 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 800);
     });
+
+
+    $("#menu").on("click", function (event) {
+        event.preventDefault();
+        $("nav").toggle(1200);
+
+    })
+
+
 });
+

@@ -11,7 +11,7 @@
 </head>
 <body>
 <div>
-    <header class="container column-container justify-content ">
+    <header class="header column-container">
         <div class="logo container row-container justify-content-end">
             <div class="column-container padding">
                 <div class="row-container">
@@ -54,20 +54,25 @@
                 </div>
             </div>
         </div>
-        <nav class="menu container row-container">
+        <div class="menu">
             <ul>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Персонажи</a></li>
-                <li><a href="#">Шоу-программы</a>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Заказ праздника</a></li>
+                <li class="icon"><a id="menu" href="#">&#9776;</a></li>
+            </ul>
+        </div>
+        <nav class="menu show container row-container">
+            <ul>
+                <li class="menuall"><a href="#">О нас</a></li>
+                <li class="menuall"><a href="#">Персонажи</a></li>
+                <li class="menuall"><a href="#">Шоу-программы</a>
+                <li class="menuall"><a href="#">Услуги</a></li>
+                <li class="menuall"><a href="#">Отзывы</a></li>
+                <li class="menuall"><a href="#">Заказ праздника</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <!--тут должен быть в дальнейшем слайдер, который подтягивает из бд отзывы -->
-        <section class=" fd-col container row-container margin">
+        <section class="fd-col row-container">
             <div class="flex-1 feedback  row-container ">
                 <div class="feedbackphoto row-container flex-1"><img src="https://www.motto.net.ua/old_site/img/girls1/1292862609_F1E5EAF1F3E0EBFCEDE0FF20ECE0E5F7EAE0.jpg" alt="feedback"></div>
                 <div class="flex-2 feedback-text">
@@ -155,5 +160,7 @@
         </footer>
     </main>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>

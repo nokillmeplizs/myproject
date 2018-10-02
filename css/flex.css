@@ -79,6 +79,7 @@ header{
     max-width: 100%;
     height: auto;
 }
+
 .logo{
     background-image: url("../images/test.png");
     background-repeat: no-repeat;
@@ -87,12 +88,12 @@ header{
 }
 .social1{
     text-align: right;
-    margin-top: 25%;
+    margin-top: 10%;
     margin-right: 6%;
 }
 .social2{
     text-align: left;
-    margin-top: 25%;
+    margin-top: 10%;
     margin-right: 6%;
 }
 .header-right{
@@ -270,7 +271,9 @@ input[type=submit]:active {
     background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
     box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
 }
-
+.icon{
+    display: none;
+}
 .menu{
     font-family:Bad Script,cursive, Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 5px #888;
@@ -308,7 +311,7 @@ input[type=submit]:active {
     background: -webkit-linear-gradient(top,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
-    padding: 15px 30px 15px 40px;
+    padding: 7px 20px 7px 20px;
     font-size: calc((100vw - 480px) / (1280 - 480) * (24 - 16) + 16px);
     color: #454547;
     text-decoration: none;
@@ -384,10 +387,13 @@ padding: 1%;
 }
 .fd-col{
     min-height: 250px;
+    margin-top: 3%;
+    margin-right: 6%;
+    margin-left: 6%;
 }
 
 .fb-slide{
-    margin-top: 3%;
+    margin-top: 1%;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -413,10 +419,11 @@ footer{
     background: #e2a233;
     min-height:10%;
 }
+/*настройки блога*/
 .blog{
     margin-top: 4%;
-    margin-left: 8%;
-    margin-right:8%;
+    margin-left: 6%;
+    margin-right:6%;
     margin-bottom:4%;
     background:gold;
     border-radius: 10px;
@@ -424,7 +431,6 @@ footer{
 .blogfoto{
     min-width: 21%;
     box-sizing: border-box;
-    display: flex;
     padding: 10px;
     align-self: center;
     }
@@ -438,8 +444,11 @@ footer{
 .blogfoto >img{
     border-radius: 15px;
     width: 100%;
-
 }
+nav.show{
+    display: block;
+}
+/*--------------*/
 
 @media screen and (max-width: 1024px) {
     .blogfoto{
@@ -478,21 +487,35 @@ footer{
 
 }
 @media screen and (max-width: 480px) {
-    .blogfoto{
+    .blogfoto {
         min-width: 80%;
     }
-    .feedback{
+
+    .feedback {
         flex-direction: column;
     }
+
     .feedbackphoto {
         align-self: center;
         max-width: 90%;
         height: auto;
     }
-    .logo{
+
+    .logo {
         justify-content: center;
     }
-    .fb2{
+
+    .fb2 {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        position: absolute;
+        left: 38%;
+    }
+
+    nav.show{
         display: none;
     }
 }
