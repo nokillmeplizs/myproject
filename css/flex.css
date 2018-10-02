@@ -334,8 +334,8 @@ input[type=submit]:active {
 }
 .menu li > ul li ul{
     position: absolute;
-    min-width:100px;
-    right: -211px;
+    width: 100%;
+    right: -100%;
     top: 0;
 }
 .menu li:hover > ul{
