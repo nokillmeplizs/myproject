@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     $("#menu").on("click", function (event) {
         event.preventDefault();
-        $("nav").toggle(1200);
+        $("nav").toggle(400);
 
     })
 
