@@ -1,6 +1,4 @@
-@import "normalize.css";
-
-.container {
+.navwidth{
     width: 100%;
     margin: 0 auto;
 }
@@ -15,7 +13,6 @@
 }
 .justify-space-between{
     justify-content: space-between;
-    justify-content: space-around;
 }
 .justify-content-space-around{
     justify-content: space-around;
@@ -227,7 +224,7 @@ legend{
     text-align: center;
 }
 
-input[type=submit] {
+input[type=submit],button {
     display: inline-block;
     margin: 10px;
     font-family: arial,sans-serif;
@@ -242,6 +239,13 @@ input[type=submit] {
     border-radius: 2px;
     background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
     transition: all .218s ease 0s;
+
+}
+button > a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(68,68,68);
 }
 input[type=submit]:hover {
     color: rgb(24,24,24);
@@ -255,6 +259,7 @@ input[type=submit]:active {
     background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
     box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
 }
+
 .icon{
     display: none;
 }
@@ -440,13 +445,26 @@ nav.show{
     display: block;
 }
 .characters{
-    max-width: 13%;
-    min-width: 13%;
+ width: 13%;
     align-self: center;
-    margin: 3%;
+    margin: 2%;
     box-sizing: border-box;
-
 }
+.charactersgorizont{
+    justify-content: flex-end;
+  width: 32%;
+}
+.charfoto{
+    box-sizing: border-box;
+    align-self: center;
+    margin: 5px;
+}
+.charfoto > img{
+    width: 100%;
+    border: 3px solid goldenrod;
+    box-sizing: border-box;
+}
+
 /*--------------*/
 
 @media screen and (max-width: 1024px) {
@@ -475,6 +493,9 @@ nav.show{
         margin: 35% 15% 10% 15%;
 
     }
+    .characters{
+        width: 25%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -495,7 +516,13 @@ nav.show{
         margin: 25% 7% 10% 7%;
 
     }
-
+    .characters{
+        width: 46%;
+    }
+    .charactersgorizont{
+        justify-content: flex-end;
+        width: 48%;
+    }
 }
 @media screen and (max-width: 480px) {
     .blogfoto {
@@ -534,5 +561,9 @@ nav.show{
         max-width: 100%;
         margin: 60% 3% 10% 3%;
 
+    }
+    .charactersgorizont{
+        justify-content: flex-end;
+        width: 100%;
     }
 }
